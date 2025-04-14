@@ -1,0 +1,22 @@
+@import url(colors.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-100);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--text-100);
+  border-radius: 10px;
+  border: 2px solid var(--background-100);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-200);
+}
+

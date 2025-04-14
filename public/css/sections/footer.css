@@ -1,0 +1,93 @@
+@import url(../utils/colors.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E4ECF4;
+  width: 100%;
+  min-height: 250px;
+}
+
+.footer-items {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  height: 80%;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-item-title {
+  color: var(--text-300);
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.footer-item-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.footer-item-link {
+  text-decoration: none;
+  color: var(--text-200);
+  transition: all 0.5s;
+}
+
+.footer-item-link:hover {
+  color: var(--primary-300);
+  transition: all 0.5s;
+}
+
+
+@media (max-width: 1100px) {
+  .footer-item-title {
+    font-size: 18px;
+  }
+
+  .footer-item-links {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 900px) {
+  .footer-item-title {
+    font-size: 16px;
+  }
+
+  .footer-item-links {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-item-title {
+    font-size: 15px;
+  }
+
+  .footer-item-links {
+    font-size: 15px;
+  }
+
+  .footer-items {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+}

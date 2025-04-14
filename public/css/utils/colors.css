@@ -1,0 +1,23 @@
+:root {
+    --primary-300 : #6484DC;
+    --primary-200 : #809CE9;
+    --primary-100 : #BACDFF;
+    --secondary-300: #EE8E57;
+    --secondary-200: #FFA471;
+    --secondary-100: #F9C2A4;
+    --background-300: #D6DFE9;
+    --background-200: #E4ECF4;
+    --background-100: #F2F6F9;
+    --text-300: #282D31;
+    --text-200: #4E5760;
+    --text-100: #768695;
+    --red-300: #F73F3F;
+    --red-200: #FF6565;
+    --red-100: #FF8585;
+    --green-300: #63C891;
+    --green-200: #86D7B5;
+    --green-100: #AEDBC5;
+    --yellow-300: #F4AE44;
+    --yellow-200: #F2BC6A;
+    --yellow-100: #F6CC8E;
+}

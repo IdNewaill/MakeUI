@@ -1,0 +1,32 @@
+@import url(colors.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.button {
+  border-radius: 8px;
+  border: 2px solid var(--primary-300);
+  cursor: pointer;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.8em 1.5em;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.primary {
+  background-color: var(--primary-300);
+  color: white;
+}
+
+.primary:hover {
+  background-color: transparent;
+  color: var(--primary-300);
+}
+
+.secondary {
+  background-color: transparent;
+  color: var(--primary-300);
+}
+
+.secondary:hover {
+  background-color: var(--primary-300);
+  color: white;
+}

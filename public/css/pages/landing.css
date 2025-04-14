@@ -1,0 +1,431 @@
+@import url(../utils/colors.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  margin: 140px 100px;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  animation: slideIn 1s ease-out;
+}
+
+.hero-left h1,
+.hero-left p {
+  max-width: 35vw;
+  line-height: 1.4;
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.hero-left h1 {
+  font-size: 50px;
+  font-weight: 800;
+  animation-delay: 0.5s;
+}
+
+.hero-left h1 .important {
+  color: var(--primary-300);
+}
+
+.hero-left p {
+  font-size: 25px;
+  color: var(--text-200);
+  animation-delay: 1s;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: slideIn 1s ease-out forwards;
+  animation-delay: 1.5s;
+}
+
+.hero-button {
+  width: 12em;
+  height: 4em;
+  font-size: 18px;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s ease;
+}
+
+.hero-button.clicked:hover {
+  background-color: transparent;
+  color: var(--primary-300);
+}
+
+.hero-button.clicked {
+  background-color: transparent;
+  color: var(--primary-300);
+}
+
+.loader {
+  position: absolute;
+  border: 3px solid var(--primary-300);
+  border-radius: 50%;
+  border-top: 4px solid transparent;
+  width: 2em;
+  height: 2em;
+  animation: spin 1s linear infinite;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+
+
+.hero-right {
+  display: flex;
+  align-items: center;
+}
+
+.hero-right img {
+  width: 30vw;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  animation: bounce-in 2.5s ease-in-out forwards;
+}
+
+.tech-use {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+}
+
+.tech-use h3 {
+  color: var(--text-200);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 112px;
+  animation: slideIn 1s ease-out forwards;
+}
+
+.tech-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 70px;
+  animation: slideIn 1s ease-out forwards;
+}
+
+.tech-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  height: 90px;
+  width: 15rem;
+  background: #FFF;
+  color: var(--text-200);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 112px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+  gap: 15px;
+  transition: all 0.5s;
+
+}
+
+.tech-item:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+  cursor: default;
+}
+
+.preview-list {
+  display: flex;
+  flex-direction: column;
+  margin: 140px 100px;
+  gap: 200px;
+}
+
+.preview {
+  display: flex;
+  align-items: center;
+  gap: 5vw;
+}
+
+.preview-image img {
+  width: 40vw;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border-radius: 1vw;
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+.preview-image img:hover {
+  transform: scale(0.9);
+  transition: all 0.5s;
+}
+
+.preview-text {
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+}
+
+.preview-1 .preview-text.animate {
+  animation: slideInRight 1s ease-in-out forwards;
+}
+
+.preview-2 .preview-text.animate {
+  animation: slideInLeft 1s ease-in-out forwards;
+}
+
+.preview-1 .preview-image img.animate {
+  animation: slideInLeft 1s ease-out forwards;
+}
+
+.preview-2 .preview-image img.animate {
+  animation: slideInRight 1s ease-out forwards;
+}
+
+.animate {
+  opacity: 1;
+  /* Permet de s'assurer que l'élément devient visible immédiatement */
+}
+
+.preview-text h4 {
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.preview-text .first {
+  color: #A263C8;
+}
+
+.preview-text .second {
+  color: #F4AE44;
+}
+
+
+.preview-text h1 {
+  color: var(--text-300);
+  font-family: Poppins;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.preview-text p {
+  color: var(--text-300);
+  font-family: Poppins;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  max-width: 45vw;
+}
+
+
+@media (max-width: 1100px) {
+  .hero-left h1 {
+    font-size: 40px;
+  }
+
+  .hero-left p {
+    font-size: 15px;
+  }
+
+  .hero-button {
+    font-size: 15px;
+  }
+
+  .preview-list {
+    gap: 100px;
+  }
+
+  .preview {
+    flex-direction: column;
+  }
+
+  .preview-image img {
+    width: 75vw;
+  }
+
+  .preview-text h4 {
+    font-size: 18px;
+  }
+
+  .preview-text h1 {
+    font-size: 42px;
+  }
+
+  .preview-text p {
+    font-size: 14px;
+    max-width: 75vw;
+  }
+
+  .preview.preview-2 .preview-text {
+    order: 2;
+  }
+
+  .preview.preview-2 .preview-image {
+    order: 1;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero-left h1 {
+    font-size: 30px;
+  }
+
+  .hero-left p {
+    font-size: 13px;
+  }
+
+  .hero-button {
+    font-size: 13px;
+  }
+
+  .tech-item {
+    height: 70px;
+    width: 12rem;
+    gap: 15px;
+    font-size: 20px;
+
+  }
+
+  .tech-list {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    margin: 120px 40px;
+  }
+
+  .hero-right img {
+    display: none;
+  }
+
+  .hero-left h1 {
+    font-size: 40px;
+    max-width: 70vw;
+  }
+
+  .hero-left p {
+    font-size: 20px;
+    max-width: 65vw;
+  }
+}
+
+@media (max-width: 550px) {
+  .hero {
+    margin: 120px 20px;
+  }
+
+  .preview-list {
+    margin: 120px 20px;
+  }
+
+  .hero-left h1 {
+    font-size: 30px;
+    max-width: 85vw;
+  }
+
+  .hero-left p {
+    font-size: 20px;
+    max-width: 75vw;
+  }
+
+  .hero-button {
+    font-size: 14px;
+    border-radius: 8px;
+  }
+
+  .preview-image img {
+    width: 90vw;
+  }
+}
+
+@keyframes bounce-in {
+  0% {
+    transform: scale(0.0);
+  }
+
+  60% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
