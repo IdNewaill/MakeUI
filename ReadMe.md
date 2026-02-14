@@ -8,7 +8,7 @@ Ce faux site vitrine à été l'un de nos projets de première année. Il ne fon
 ## Lancer le site
 <iframe src="https://htmlpreview.github.io/?https://raw.githubusercontent.com/IdNewaill/MakeUI/refs/heads/main/public/index.html"></iframe>
 
-Si le site n'apparaît pas, vous pouvez toujours cliquer [ici](./public/index.html) !
+Si le site n'apparaît pas, vous pouvez toujours cliquer [ici](https://htmlpreview.github.io/?https://raw.githubusercontent.com/IdNewaill/MakeUI/refs/heads/main/public/index.html) !
 
 ## Apperçu
 
