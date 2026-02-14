@@ -1,4 +1,4 @@
-# MakeUI / MakeGUI
+# MakeUI
 
 <img src="./HideMe/PageHome.PNG" width=100%>
 
