@@ -6,9 +6,14 @@
 Ce faux site vitrine à été l'un de nos projets de première année. Il ne fonctionne pas entièrement, le but était simplement de jouer avec Html, Css.
 
 ## Lancer le site
-<iframe src="https://htmlpreview.github.io/?https://raw.githubusercontent.com/IdNewaill/MakeUI/refs/heads/main/public/index.html"></iframe>
 
-Si le site n'apparaît pas, vous pouvez toujours cliquer [ici](https://htmlpreview.github.io/?https://raw.githubusercontent.com/IdNewaill/MakeUI/refs/heads/main/public/index.html) !
+Vous pouvez retrouver le site en ligne (depuis GitHub directement).
+
+[➜ Découvrir en ligne !](https://htmlpreview.github.io/?https://raw.githubusercontent.com/IdNewaill/MakeUI/refs/heads/main/public/index.html)
+
+Pour ouvrir en local, le index.html se trouve ici :
+
+[➜ Découvrir en local](./public/index.html)
 
 ## Apperçu
 
