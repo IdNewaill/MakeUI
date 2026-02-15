@@ -3,7 +3,7 @@ const burger = document.querySelector('.burger');
 const navLinks = document.querySelector('.nav-links');
 
 const h1 = document.querySelector('.hero-left h1');
-const text = "MakeUI est une boutique important pour vos sites web !";
+const text = "MakeUI est une boutique innovante pour vos sites web !";
 
 // Créer un élément pour contenir le texte généré
 const heroText = document.createElement('h1');
@@ -16,9 +16,9 @@ h1.style.display = 'none';
 // Fonction Typping effect
 function textTyppingEffect(element, text, i = 0) {
     if (i === text.length - 1) {
-        // Créer un élément span pour le mot "important" si il existe dans le texte
-        if (text.includes('important')) {
-            const index = text.indexOf('important');
+        // Créer un élément span pour le mot "innovante" si il existe dans le texte
+        if (text.includes('innovante')) {
+            const index = text.indexOf('innovante');
             element.innerHTML = text.substring(0, index) + `<span class="important">${text.substring(index, index + 9)}</span>` + text.substring(index + 9);
         } else {
             element.textContent = text;
